@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css" >
+      <link rel="stylesheet" href="css/slick.css" >
+      <link rel="stylesheet" href="css/slick-theme.css" >
+      <style>
+         body{
+         padding: 0px;
+         margin: 0px;
+         overflow-x:hidden;
+         font-size: 14px !important;
+         }
+         h4{
+         color:#808080;;
+         }
+         /************Vertical Slider**********/
+         .vertical-slider .slick-next, .vertical-slider .slick-next:hover {
+         right: 0px !important;
+         background: url(img/arrow-down.png) no-repeat !important;
+         width: 50px;
+         height: 50px;
+         }
+         .vertical-slider .slick-next{
+         top:108%;
+         }
+         .vertical-slider .slick-prev{
+         top:108%;
+         }
+         .vertical-slider .slick-prev, .vertical-slider .slick-prev:hover{
+         left: 0px !important;
+         z-index: 999 !important;
+         background: url(img/arrow-up.png) no-repeat !important;
+         width: 50px;
+         height: 50px;
+         }
+         .vertical-slider .slick-next::before, .vertical-slider .slick-prev::before {
+         content: "" !important;
+         }
+         /************Vertical Slider**********/
+         /************Horizontal Slider**********/
+         .horizontal-slider .slick-next, .horizontal-slider .slick-next:hover {
+         background: url(img/arrow-right.png) no-repeat !important;
+         width: 50px;
+         height: 50px;
+         }
+         .horizontal-slider .slick-prev, .horizontal-slider .slick-prev:hover{
+         z-index: 999 !important;
+         background: url(img/arrow-left.png) no-repeat !important;
+         width: 50px;
+         height: 50px;
+         }
+         .horizontal-slider .slick-next::before, .horizontal-slider .slick-prev::before {
+         content: "" !important;
+         }
+         /************Horizontal Slider**********/
+         /************Horizontal Dot Slider**********/
+         .horizontal-dot-slider .slick-dots li button::before {
+         font-size: 40px;
+         }
+         /************Horizontal Dot Slider**********/
+      </style>
+      <title>Vertical and Horizontal Slider</title>
+   </head>
+   <body>
+      <br><br>
+      <div class="conatiner">
+         <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-2">
+               <h4>Vertical Slider</h4>
+               <br>
+               <div class="vertical-slider">
+                  <div><img src="img/banner.jpg" class="img-fluid" title="banner" alt="banner"></div>
+                  <div><img src="img/banner.jpg" class="img-fluid" title="banner" alt="banner"></div>
+                  <div><img src="img/banner.jpg" class="img-fluid" title="banner" alt="banner"></div>
+                  <div><img src="img/banner.jpg" class="img-fluid" title="banner" alt="banner"></div>
+                  <div><img src="img/banner.jpg" class="img-fluid" title="banner" alt="banner"></div>
+                  <div><img src="img/banner.jpg" class="img-fluid" title="banner" alt="banner"></div>
+               </div>
+            </div>
+            <div class="col-md-7">
+               <h4>Horizontal Slider</h4>
+               <br>
+               <div class="horizontal-slider">
+                  <div><img src="img/banner.jpg" class="img-fluid mx-auto" title="banner" alt="banner"></div>
+                  <div><img src="img/banner.jpg" class="img-fluid mx-auto" title="banner" alt="banner"></div>
+                  <div><img src="img/banner.jpg" class="img-fluid mx-auto" title="banner" alt="banner"></div>
+                  <div><img src="img/banner.jpg" class="img-fluid mx-auto" title="banner" alt="banner"></div>
+                  <div><img src="img/banner.jpg" class="img-fluid mx-auto" title="banner" alt="banner"></div>
+                  <div><img src="img/banner.jpg" class="img-fluid mx-auto" title="banner" alt="banner"></div>
+               </div>
+               <br><br>
+               <h4>Horizontal With Dots Slider</h4>
+               <br>
+               <div class="horizontal-dot-slider">
+                  <div><img src="img/banner.jpg" class="img-fluid mx-auto" title="banner" alt="banner"></div>
+                  <div><img src="img/banner.jpg" class="img-fluid mx-auto" title="banner" alt="banner"></div>
+                  <div><img src="img/banner.jpg" class="img-fluid mx-auto" title="banner" alt="banner"></div>
+                  <div><img src="img/banner.jpg" class="img-fluid mx-auto" title="banner" alt="banner"></div>
+                  <div><img src="img/banner.jpg" class="img-fluid mx-auto" title="banner" alt="banner"></div>
+                  <div><img src="img/banner.jpg" class="img-fluid mx-auto" title="banner" alt="banner"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- JS -->
+      <script src="js/jquery-3.3.1.min.js" ></script>
+      <script src="js/bootstrap.min.js" ></script>
+      <script src="js/slick.min.js" ></script>
+      <script type="text/javascript">
+         $('.vertical-slider').slick({
+         dots: false,
+         infinite: true,
+         arrows: true,
+         vertical: true,
+         slidesToShow: 5,
+         slidesToScroll: 1,
+         autoplay: true,
+         autoplaySpeed: 2000,
+         });
+          
+           $('.horizontal-slider').slick({
+         dots: false,
+         infinite: true,
+         arrows: true,
+         slidesToShow: 3,
+         slidesToScroll: 1,
+         autoplay: true,
+         autoplaySpeed: 2000,
+               
+               responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+       
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    
+  ]
+         });
+           $('.horizontal-dot-slider').slick({
+         dots: true,
+         infinite: true,
+         arrows: false,
+         slidesToShow: 3,
+         slidesToScroll: 1,
+         autoplay: true,
+         autoplaySpeed: 2000,
+               responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+       
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    
+  ]
+         });
+          
+      </script>
+   </body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css" >
+      <link rel="stylesheet" href="css/slick.css" >
+      <link rel="stylesheet" href="css/slick-theme.css" >
+      <style>
+         body{
+         padding: 0px;
+         margin: 0px;
+         overflow-x:hidden;
+         font-size: 14px !important;
+         }
+         .slick-next, .slick-next:hover {
+         right: 0px !important;
+         background: url(img/arrow-r.png) no-repeat !important;
+         width: 50px;
+         height: 50px;
+         }
+         .slick-prev, .slick-prev:hover{
+         left: 0px !important;
+         z-index: 999 !important;
+         background: url(img/arrow-l.png) no-repeat !important;
+         width: 50px;
+         height: 50px;
+         }
+         .slick-next::before, .slick-prev::before {
+         content: "" !important;
+         }
+      </style>
+      <title>Banner Slider</title>
+   </head>
+   <body>
+      <div class="conatiner-fluid">
+         <div class="banner">
+            <div><img src="img/banner.jpg" class="img-fluid" title="banner" alt="banner"></div>
+            <div><img src="img/banner.jpg" class="img-fluid" title="banner" alt="banner"></div>
+            <div><img src="img/banner.jpg" class="img-fluid" title="banner" alt="banner"></div>
+         </div>
+      </div>
+      <!-- JS -->
+      <script src="js/jquery-3.3.1.min.js" ></script>
+      <script src="js/bootstrap.min.js" ></script>
+      <script src="js/slick.min.js" ></script>
+      <script type="text/javascript">
+         $('.banner').slick({
+         dots: false,
+         infinite: true,
+         arrows: true,
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         autoplay: true,
+         autoplaySpeed: 2000,
+         });
+          
+      </script>
+   </body>
+</html>

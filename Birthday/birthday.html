@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css" >
+      <link rel="stylesheet" href="css/slick.css" >
+      <link rel="stylesheet" href="css/slick-theme.css" >
+      <style>
+         body{
+         padding: 0px;
+         margin: 0px;
+         overflow-x:hidden;
+         font-size: 14px !important;
+         }
+         h4{
+         color:#808080;;
+         }
+         /************Horizontal Slider**********/
+         .horizontal-slider .slick-next, .horizontal-slider .slick-next:hover {
+         background: url(img/arrow-right.png) no-repeat !important;
+         width: 50px;
+         height: 50px;
+         }
+         .horizontal-slider .slick-prev, .horizontal-slider .slick-prev:hover{
+         z-index: 999 !important;
+         background: url(img/arrow-left.png) no-repeat !important;
+         width: 50px;
+         height: 50px;
+         left: -70px;
+         }
+         .horizontal-slider .slick-next::before, .horizontal-slider .slick-prev::before {
+         content: "" !important;
+         }
+          .horizontal-slider .slick-dots li button::before {
+    font-size: 40px;
+}
+         /************Horizontal Slider**********/
+         /************Birthday**********/
+         .birthday img.user{
+         border-radius: 100%;
+         width:80px;
+         }
+         .birthday .photo{float: left;}
+         .birthday .info{float: left;}
+         .birthday p{margin: 0px;}
+         .birthday .name{font-size: 15px; color: #E45214;}
+         .birthday .desig{font-size: 13px; color: #b3b5b7;}
+         .birthday .dob{font-size: 14px;color: #000;}
+         .birthday .info{  padding: 8px 0px;}
+         .birthday .photo{  margin-right: 15px;}
+         /************Birthday**********/
+      </style>
+      <title>Birthday</title>
+   </head>
+   <body>
+      <br><br>
+      <div class="conatiner">
+         <div class="row">
+            <div class="offset-md-3 col-md-6">
+               <div class="horizontal-slider birthday justify-content-center">
+                  <div>
+                     <div class="photo">
+                        <img src="img/user.jpg" class="img-responsive user">
+                     </div>
+                     <div class="info">
+                        <p class="name">Username</p>
+                        <p class="desig">Software Engineer</p>
+                        <p class="dob">DOB : 12 June 2018</p>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="photo">
+                        <img src="img/user.jpg" class="img-responsive user">
+                     </div>
+                     <div class="info">
+                        <p class="name">Username</p>
+                        <p class="desig">Software Engineer</p>
+                        <p class="dob">DOB : 12 June 2018</p>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="photo">
+                        <img src="img/user.jpg" class="img-responsive user">
+                     </div>
+                     <div class="info">
+                        <p class="name">Username</p>
+                        <p class="desig">Software Engineer</p>
+                        <p class="dob">DOB : 12 June 2018</p>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="photo">
+                        <img src="img/user.jpg" class="img-responsive user">
+                     </div>
+                     <div class="info">
+                        <p class="name">Username</p>
+                        <p class="desig">Software Engineer</p>
+                        <p class="dob">DOB : 12 June 2018</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- JS -->
+      <script src="js/jquery-3.3.1.min.js" ></script>
+      <script src="js/bootstrap.min.js" ></script>
+      <script src="js/slick.min.js" ></script>
+      <script type="text/javascript">
+         $('.birthday').slick({
+         dots: false,
+         infinite: true,
+         arrows: true,
+         slidesToShow: 3,
+         slidesToScroll: 1,
+         autoplay: true,
+         autoplaySpeed: 2000,
+             
+             responsive: [
+         {
+         breakpoint: 1024,
+         settings: {
+         slidesToShow: 3,
+         slidesToScroll: 1,
+         
+         }
+         },
+         {
+         breakpoint: 600,
+         settings: {
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         arrows: false,
+        dots: true
+         }
+         },
+         {
+         breakpoint: 480,
+         settings: {
+         slidesToShow: 1,
+         slidesToScroll: 1,
+              arrows: false,
+        dots: true
+         }
+         }
+         
+         ]
+         });
+         
+         
+      </script>
+   </body>
+</html>
