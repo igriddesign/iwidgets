@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/bootstrap.min.css" >
+     <link rel="stylesheet" href="css/slick.css" >
+     <link rel="stylesheet" href="css/slick-theme.css" >
+     <style>
+         body{
+         padding: 0px;
+         margin: 0px;
+         overflow-x:hidden;
+         font-size: 14px !important;
+         }
+         h4{
+         color:#808080;;
+         }
+         /************Vertical Slider**********/
+         .vertical-slider .slick-next, .vertical-slider .slick-next:hover {
+         right: 0px !important;
+         background: url(img/arrow-down.png) no-repeat !important;
+         width: 30px;
+         height: 30px;
+        left: 55%;
+         }
+         .vertical-slider .slick-next{
+         top:108%;
+         }
+         .vertical-slider .slick-prev{
+         top:108%;
+         }
+         .vertical-slider .slick-prev, .vertical-slider .slick-prev:hover{
+        
+         z-index: 999 !important;
+         background: url(img/arrow-up.png) no-repeat !important;
+         width: 30px;
+         height: 30px;
+             left: 45%;
+         }
+         .vertical-slider .slick-next::before, .vertical-slider .slick-prev::before {
+         content: "" !important;
+         }
+         /************Vertical Slider**********/
+         /************Birthday**********/
+          .new-joiners.slick-vertical .slick-slide{
+              margin-bottom: 20px;
+          }
+          .title-part{
+              background-color: #e97442;
+    color: #fff;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+              line-height: 40px;
+          }
+          .title-part img{
+              margin-right: 10px;
+              float: left;
+                  margin-top: 5px;
+          }
+         .new-joiners img.user{
+         border-radius: 100%;
+         width:80px;
+         }
+         .new-joiners .photo{float: left;}
+         .new-joiners .info{float: left;}
+         .new-joiners p{margin: 0px;}
+         .new-joiners .name{font-size: 15px; color: #E45214;}
+         .new-joiners .desig{font-size: 13px; color: #b3b5b7;}
+         .new-joiners .dob{font-size: 14px;color: #000;}
+         .new-joiners .info{  padding: 8px 0px;}
+         .new-joiners .photo{  margin-right: 15px;}
+          
+         /************Birthday**********/
+     </style>
+     <title>New Joiners</title>
+  </head>
+  <body>
+     <br><br>
+     <div class="conatiner">
+        <div class="row">
+           <div class="offset-md-4 col-md-4">
+                
+               <div class="title-part">
+               <img src="img/user-icon.png" class="img-fluid"><p>New Joinees</p>
+               </div>
+                
+                
+              <div class="vertical-slider new-joiners justify-content-center">
+                 <div>
+                    <div class="photo">
+                       <img src="img/user.jpg" class="img-responsive user">
+                    </div>
+                    <div class="info">
+                       <p class="name">Username</p>
+                       <p class="desig">Software Engineer</p>
+                        
+                    </div>
+                 </div>
+                 <div>
+                    <div class="photo">
+                       <img src="img/user.jpg" class="img-responsive user">
+                    </div>
+                    <div class="info">
+                       <p class="name">Username</p>
+                       <p class="desig">Software Engineer</p>
+                     
+                    </div>
+                 </div>
+                 <div>
+                    <div class="photo">
+                       <img src="img/user.jpg" class="img-responsive user">
+                    </div>
+                    <div class="info">
+                       <p class="name">Username</p>
+                       <p class="desig">Software Engineer</p>
+                        
+                    </div>
+                 </div>
+                 <div>
+                    <div class="photo">
+                       <img src="img/user.jpg" class="img-responsive user">
+                    </div>
+                    <div class="info">
+                       <p class="name">Username</p>
+                       <p class="desig">Software Engineer</p>
+                      
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+     <!-- JS -->
+     <script src="js/jquery-3.3.1.min.js" ></script>
+     <script src="js/bootstrap.min.js" ></script>
+     <script src="js/slick.min.js" ></script>
+     <script type="text/javascript">
+         $('.new-joiners').slick({
+         dots: false,
+         infinite: true,
+         arrows: true,
+         slidesToShow: 3,
+         slidesToScroll: 1,
+         autoplay: true,
+         autoplaySpeed: 2000,
+         vertical: true,
+                        
+         });
+         
+         
+     </script>
+  </body>
+</html>

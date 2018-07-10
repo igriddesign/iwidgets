@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <!-- CSS -->
-      <link rel="stylesheet" href="css/bootstrap.min.css" >
-      <link rel="stylesheet" href="css/slick.css" >
-      <link rel="stylesheet" href="css/slick-theme.css" >
-      <style>
+  <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/bootstrap.min.css" >
+     <link rel="stylesheet" href="css/slick.css" >
+     <link rel="stylesheet" href="css/slick-theme.css" >
+     <style>
          body{
          padding: 0px;
          margin: 0px;
@@ -20,24 +20,43 @@
          /************Horizontal Slider**********/
          .horizontal-slider .slick-next, .horizontal-slider .slick-next:hover {
          background: url(img/arrow-right.png) no-repeat !important;
-         width: 50px;
-         height: 50px;
+         width: 30px;
+         height: 30px;
+            top: 122%;
+         left: 55%;
+             background-size: cover;
          }
          .horizontal-slider .slick-prev, .horizontal-slider .slick-prev:hover{
          z-index: 999 !important;
          background: url(img/arrow-left.png) no-repeat !important;
-         width: 50px;
-         height: 50px;
-         left: -70px;
+         width: 30px;
+         height: 30px;
+         left: 45%;
+              top: 122%;
+background-size: contain;
          }
          .horizontal-slider .slick-next::before, .horizontal-slider .slick-prev::before {
          content: "" !important;
          }
+          .horizontal-slider .slick-next{
+              right: -60px;
+          }
           .horizontal-slider .slick-dots li button::before {
     font-size: 40px;
 }
          /************Horizontal Slider**********/
          /************Birthday**********/
+          .title-part{
+              background-color: #e97442;
+    color: #fff;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+              line-height: 40px;
+          }
+          .title-part img{
+              margin-right: 10px;
+              float: left;
+          }
          .birthday img.user{
          border-radius: 100%;
          width:80px;
@@ -50,65 +69,72 @@
          .birthday .dob{font-size: 14px;color: #000;}
          .birthday .info{  padding: 8px 0px;}
          .birthday .photo{  margin-right: 15px;}
+          
          /************Birthday**********/
-      </style>
-      <title>Birthday</title>
-   </head>
-   <body>
-      <br><br>
-      <div class="conatiner">
-         <div class="row">
-            <div class="offset-md-3 col-md-6">
-               <div class="horizontal-slider birthday justify-content-center">
-                  <div>
-                     <div class="photo">
-                        <img src="img/user.jpg" class="img-responsive user">
-                     </div>
-                     <div class="info">
-                        <p class="name">Username</p>
-                        <p class="desig">Software Engineer</p>
-                        <p class="dob">DOB : 12 June 2018</p>
-                     </div>
-                  </div>
-                  <div>
-                     <div class="photo">
-                        <img src="img/user.jpg" class="img-responsive user">
-                     </div>
-                     <div class="info">
-                        <p class="name">Username</p>
-                        <p class="desig">Software Engineer</p>
-                        <p class="dob">DOB : 12 June 2018</p>
-                     </div>
-                  </div>
-                  <div>
-                     <div class="photo">
-                        <img src="img/user.jpg" class="img-responsive user">
-                     </div>
-                     <div class="info">
-                        <p class="name">Username</p>
-                        <p class="desig">Software Engineer</p>
-                        <p class="dob">DOB : 12 June 2018</p>
-                     </div>
-                  </div>
-                  <div>
-                     <div class="photo">
-                        <img src="img/user.jpg" class="img-responsive user">
-                     </div>
-                     <div class="info">
-                        <p class="name">Username</p>
-                        <p class="desig">Software Engineer</p>
-                        <p class="dob">DOB : 12 June 2018</p>
-                     </div>
-                  </div>
+     </style>
+     <title>Birthday</title>
+  </head>
+  <body>
+     <br><br>
+     <div class="conatiner">
+        <div class="row">
+           <div class="offset-md-3 col-md-6">
+                
+               <div class="title-part">
+               <img src="img/bd-icon.png" class="img-fluid"><p>Birthday Buddies</p>
                </div>
-            </div>
-         </div>
-      </div>
-      <!-- JS -->
-      <script src="js/jquery-3.3.1.min.js" ></script>
-      <script src="js/bootstrap.min.js" ></script>
-      <script src="js/slick.min.js" ></script>
-      <script type="text/javascript">
+                
+                
+              <div class="horizontal-slider birthday justify-content-center">
+                 <div>
+                    <div class="photo">
+                       <img src="img/user.jpg" class="img-responsive user">
+                    </div>
+                    <div class="info">
+                       <p class="name">Username</p>
+                       <p class="desig">Software Engineer</p>
+                       <p class="dob">DOB : 12 June 2018</p>
+                    </div>
+                 </div>
+                 <div>
+                    <div class="photo">
+                       <img src="img/user.jpg" class="img-responsive user">
+                    </div>
+                    <div class="info">
+                       <p class="name">Username</p>
+                       <p class="desig">Software Engineer</p>
+                       <p class="dob">DOB : 12 June 2018</p>
+                    </div>
+                 </div>
+                 <div>
+                    <div class="photo">
+                       <img src="img/user.jpg" class="img-responsive user">
+                    </div>
+                    <div class="info">
+                       <p class="name">Username</p>
+                       <p class="desig">Software Engineer</p>
+                       <p class="dob">DOB : 12 June 2018</p>
+                    </div>
+                 </div>
+                 <div>
+                    <div class="photo">
+                       <img src="img/user.jpg" class="img-responsive user">
+                    </div>
+                    <div class="info">
+                       <p class="name">Username</p>
+                       <p class="desig">Software Engineer</p>
+                       <p class="dob">DOB : 12 June 2018</p>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+     <!-- JS -->
+     <script src="js/jquery-3.3.1.min.js" ></script>
+     <script src="js/bootstrap.min.js" ></script>
+     <script src="js/slick.min.js" ></script>
+     <script type="text/javascript">
          $('.birthday').slick({
          dots: false,
          infinite: true,
@@ -150,6 +176,6 @@
          });
          
          
-      </script>
-   </body>
+     </script>
+  </body>
 </html>

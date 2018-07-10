@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body{
+	font-family: 'Lato', sans-serif;
+}
+.pop-header h4 {
+	background: #E97442;
+	font-weight: 600;
+	padding: 16px 20px;
+	color:#fff;
+	margin-bottom:  0px;
+}
+.no-padding{
+	padding:0px;
+	
+}
+.pop-content{
+	background:#f4f4f4;
+	padding:10px;
+}
+.view-more a{
+	background: #e97441;
+	padding:5px 20px;
+	color: #fff;
+	border-radius:4px;
+	float:right;
+	border: 0px;
+}
+.view-more a:hover {
+    background: #e97441;
+}
+.modal-dialog {
+    max-width: 740px;
+    margin: 1.75rem auto;
+}

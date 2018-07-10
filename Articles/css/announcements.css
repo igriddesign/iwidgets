@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body{
+	font-family: 'Lato', sans-serif;
+}
+.articles-header h4 {
+	background: #E97442;
+	font-weight: 600;
+	padding: 16px 20px;
+	color:#fff;
+	margin-bottom:  0px;
+}
+.no-padding{
+	padding:0px;
+	
+}
+i.fa.fa-newspaper-o.article-icon {
+    color: #000;
+    font-size: 21px;
+    font-weight: bold;
+    margin-right: 10px;
+	color:#fff;
+}
+ul.artcle-content li{
+	list-style:none;
+	padding: 5px;
+}
+ul.artcle-content{
+	padding: 0px;
+}
+.date-sec p {
+    text-align: center;
+    padding: 17px 10px;
+    color: #f4f4f4;
+    font-weight: 500;
+    font-weight:  bold;
+    background: #e97441;
+}
+.pad-rt{
+
+	padding-right:20px;
+}
+.artcle-content hr{
+	margin-top: 0px;
+	margin-bottom:10px;
+}
+.artcon-section p {
+    display: inline;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+.artcon-section a {
+    color: #018ffd;
+    text-decoration: none;
+    /* background: #d4d4d4; */
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+.viewall a{
+    color: #000;
+	float:right;
+    text-decoration: none;
+    background: #d4d4d4;
+    padding: 5px 10px;
+    border-radius: 4px;
+	
+}
+.article-list {
+    padding: 10px;
+    background: #f4f4f4;
+    border: 1px solid #d0d0d0;
+}
+ul.artcle-content li:hover {
+    background: #ccc;
+    cursor:  pointer;
+}
+
+img.art-img {
+    width: 95%;
+    border-radius: 4px;
+    box-shadow: 2px 2px 16px 2px rgba(0, 0, 0, 0.28);
+    border: 3px solid #fff;
+}

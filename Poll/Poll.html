@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  &lt;head>
+     &lt;meta charset="utf-8">
+     &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     &lt;!-- CSS -->
+     &lt;link rel="stylesheet" href="css/bootstrap.min.css" >
+     &lt;style>
+	  	.row 
+        {
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+      	.poll
+		{
+			background:#f5f5f5;
+			padding:5px;
+			border:1px solid #e4e4e4;	
+			border-radius: 3px;
+			box-shadow: 0px 1px 18px 3px rgba(61, 2, 128, 0.14);
+		}
+		.poll img
+		{
+			max-width:75%;
+			margin:0px auto;
+		}
+		.poll_qst h4
+		{
+			font-size: 18px;
+			line-height: 2.0;
+			margin-bottom: 0px;
+			padding:4px 8px;
+			background:#F96;
+			color:#fff;
+		}
+		.poll_qst input[type="radio"]
+		{
+			margin-left:10px;
+		}
+		.poll_qst span
+		{
+			font-size: 14px;
+			line-height: 2.8;
+			padding-right: 10px;
+		}
+		.votenow
+		{
+			padding: 5px;
+			float: right;
+			margin-right: 5px;
+			color: #fff;
+			border-radius: 3px;
+			box-shadow: 1px 1px 4px 1px #ccc;
+			background-color: #337ab7;
+			border-color: #2e6da4;
+		}
+		.votenow:hover
+		{
+			text-decoration:none;	
+		}
+		.poll_qst p
+		{
+			margin: 4px;
+    		font-weight: 600;
+		}
+     &lt;/style>
+     &lt;title>Poll</title>
+  &lt;/head>
+  &lt;body>
+       &lt;br><br>
+       &lt;div class="row">
+         &lt;div class="col-md-4 col-lg-4 col-xl-4 col-0 col-sm-2">
+         &lt;/div>
+         &lt;div class="col-md-4 col-lg-4 col-xl-4 col-12 col-sm-8">
+           &lt;div class="poll clearfix">
+            	<div class="poll_qst">
+                	<h4>Poll</h4>
+                   &lt;p>How much you like this portal?</p>
+                  &lt;input type="radio" value="option1"/><span> Option 1&lt;/span><input type="radio" value="option2" /><span> Option 2&lt;/span>
+                  &lt;input type="radio" value="option3"/><span> Option 3&lt;/span>
+               &lt;/div>
+               &lt;div class="poll_img">
+                	<center><img src="img/piechart.png" />&lt;/center>
+               &lt;/div>
+               &lt;a href="#" class="votenow">Vote Now</a>
+           &lt;/div>
+         &lt;/div>	
+       &lt;/div>
+  &lt;/body>
+</html>

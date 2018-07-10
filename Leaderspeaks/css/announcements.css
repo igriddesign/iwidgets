@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body{
+	font-family: 'Lato', sans-serif;
+}
+.leader-head h4 {
+	background: #E97442;
+	font-weight: 600;
+	padding: 16px 20px;
+	color:#fff;
+	margin-bottom:  0px;
+}
+.no-padding{
+	padding:0px;
+	
+}
+i.fa.fa-user.leader-speak {
+    color: #000;
+    font-size: 21px;
+    font-weight: bold;
+    margin-right: 10px;
+	color:#fff;
+}
+.lcont-head {
+    background: #ffbea2;
+    height: 130px;
+}
+img.leader-pic {
+    width: 170px;
+    border-radius: 210px;
+    position:  relative;
+    top: 14px;
+    left: 35px;
+    border: 13px solid #e97441;
+    box-shadow: 2px 2px 27px 4px rgba(90, 90, 90, 0.49);
+}
+.lcont-head h4 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 29px;
+}
+.led-news p {
+    padding-top: 73px;
+}
+.led-news {
+    background: #f4f4f4;
+    padding: 10px;
+}
+.leader-more button {
+    background: #e97441;
+    border: 0px;
+    float: right;
+}

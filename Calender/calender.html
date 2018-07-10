@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/bootstrap.min.css" >
+     <link rel="stylesheet" href="css/fontawesome-all.min.css" >
+     <link rel="stylesheet" href="css/bootstrap-datepicker.css" >
+     <style>
+         body{
+         padding: 0px;
+         margin: 0px;
+         overflow-x:hidden;
+         font-size: 14px !important;
+         }
+         h4{
+         color:#808080;;
+         }
+         /*CALENDAR*/
+         .responsive-calendar .controls {
+         text-align: center;
+         margin-bottom: 0px;
+         }
+         .responsive-calendar .controls a {
+         cursor: pointer;
+         }
+         .responsive-calendar .controls h4 {
+         display: inline;
+         font-size: 20px;
+         position: relative;
+         top: -5px;
+         }
+         .responsive-calendar .day-headers,
+         .responsive-calendar .days {
+         font-size: 0;
+         }
+         .responsive-calendar .day {
+         display: inline-block;
+         position: relative;
+         font-size: 14px;
+         width: 14.285714285714286%;
+         text-align: center;
+         }
+         .responsive-calendar .day a {
+         color: #000000;
+         display: block;
+         cursor: pointer;
+         padding: 14% 0 14% 0;
+         font-size: 11px;
+         }
+         .responsive-calendar .day a:hover {
+         background-color: #eee;
+         text-decoration: none;
+         }
+         .responsive-calendar .day.header {
+         border-bottom: 0px gray solid;
+         font-size: 13px;
+         color: #fff;
+         font-weight: bold;
+         }
+         .responsive-calendar .day.active a {
+         background-color: #e97442;
+         color: #ffffff;
+         }
+         .responsive-calendar .day.active a:hover {
+         background-color: #36a0e2;
+         }
+         .responsive-calendar .day.active .not-current {
+         background-color: #8fcaef;
+         color: #ffffff;
+         }
+         .responsive-calendar .day.active .not-current:hover {
+         background-color: #bcdff5;
+         }
+         .responsive-calendar .day.not-current a {
+         color: #ddd;
+         }
+         .responsive-calendar .day .badge {
+         position: absolute;
+         top: 2px;
+         right: 2px;
+         z-index: 1;
+         }
+         i.fas.fa-angle-left.lft-cal {
+         font-size: 20px;
+         position: relative;
+         right: 50px;
+         top: -5px;
+         }
+         i.fas.fa-angle-right.rit-cal{
+         font-size: 20px;
+         position: relative;
+         left: 50px;
+         top: -5px;
+         }
+         .cal-starts {
+         padding: 10px;
+         }
+         .day-headers {
+         background: #E97442;
+         margin-bottom: 6px;
+         }
+         .days .day:nth-child(odd) {
+         background: #e8e4e2;
+         }
+         span.holidays {
+         background: #caa311;
+         color: #fff;
+         padding: 5px;
+         border-radius: 4px;
+         }
+         span.event {
+         background: #90a457;
+         padding: 5px;
+         border-radius: 4px;
+         color: #fff;
+         }
+         .legers {
+         margin: 0px auto;
+         text-align: center;
+         padding: 10px;
+         }
+         /*CALENDAR*/
+     </style>
+     <title>Calender</title>
+  </head>
+  <body>
+     <br><br>
+     <div class="conatiner">
+        <div class="row">
+           <div class="offset-md-4 col-md-4">
+              <label>Date Picker Text Box</label>
+              <div class="input-group date" data-provide="datepicker">
+                 <input type="text" class="form-control">
+                 <div class="input-group-addon">
+                    <span class="glyphicon glyphicon-th"></span>
+                 </div>
+              </div>
+              <br><br>
+              <label>Calender</label>
+              <div class="card">
+                 <div class="card-body">
+                    <div class="responsive-calendar">
+                       <div class="controls">
+                          <a class="pull-left" data-go="prev"><i class="fas fa-angle-left lft-cal"></i></a>
+                          <h4><span data-head-year></span><span data-head-month></span></h4>
+                          <a class="pull-right" data-go="next"><i class="fas fa-angle-right rit-cal"></i></a>
+                       </div>
+                       <div class="day-headers">
+                          <div class="day header">Mon</div>
+                          <div class="day header">Tue</div>
+                          <div class="day header">Wed</div>
+                          <div class="day header">Thu</div>
+                          <div class="day header">Fri</div>
+                          <div class="day header">Sat</div>
+                          <div class="day header">Sun</div>
+                       </div>
+                       <div class="days" data-group="days">
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+     <!-- JS -->
+     <script src="js/jquery-3.3.1.min.js" ></script>
+     <script src="js/bootstrap.min.js" ></script>
+     <script src="js/responsive-calendar.js" ></script>
+     <script src="js/bootstrap-datepicker.js" ></script>
+     <script type="text/javascript">
+         $('.datepicker').datepicker({
+         format: 'mm/dd/yyyy',
+         startDate: '-3d'
+         });
+           
+     </script>
+     <script type="text/javascript">
+         $(document).ready(function () {
+           $(".responsive-calendar").responsiveCalendar({
+             time: '2013-05',
+             events: {
+               "2013-04-30": {"number": 5, "url": "http://w3widgets.com/responsive-slider"},
+               "2013-04-26": {"number": 1, "url": "http://w3widgets.com"}, 
+               "2013-05-03":{"number": 1}, 
+               "2013-06-12": {}}
+           });
+         });
+     </script>
+  </body>
+</html>

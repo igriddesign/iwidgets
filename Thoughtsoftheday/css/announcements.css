@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body{
+	font-family: 'Lato', sans-serif;
+}
+.thoughts-day p{
+	text-align:center;
+	vertical-align:  middle;
+	margin: 0px;
+	letter-spacing: 2px;
+}
+.thoughts-day {
+    background: #E97442;
+    border-radius: 60px;
+    padding: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+img.quote-pic {
+    width: 30px;
+    margin-right: 15px;
+}

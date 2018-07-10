@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body{
+	font-family: 'Lato', sans-serif;
+}
+.announ-header h4 {
+	background: #E97442;
+	font-weight: 600;
+	padding: 16px 20px;
+	color:#fff;
+	margin-bottom:  0px;
+}
+.no-padding{
+	padding:0px;
+	
+}
+i.fa.fa-bullhorn.announ-icon {
+    color: #000;
+    font-size: 21px;
+    font-weight: bold;
+    margin-right: 10px;
+	color:#fff;
+}
+ul.announ-content li{
+	list-style:none;
+	padding: 5px;
+}
+ul.announ-content{
+	padding: 0px;
+}
+.date-sec p {
+    text-align: center;
+    padding: 17px 10px;
+    color: #f4f4f4;
+    font-weight: 500;
+    font-weight:  bold;
+    background: #e97441;
+}
+.pad-rt{
+
+	padding-right:20px;
+}
+.announ-content hr{
+	margin-top: 0px;
+	margin-bottom:10px;
+}
+.con-section p {
+    display: inline;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+.con-section a {
+    color: #018ffd;
+    text-decoration: none;
+    /* background: #d4d4d4; */
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+.viewall a{
+    color: #000;
+	float:right;
+    text-decoration: none;
+    background: #d4d4d4;
+    padding: 5px 10px;
+    border-radius: 4px;
+	
+}
+.announcement-list {
+    padding: 10px;
+    background: #f4f4f4;
+    border: 1px solid #d0d0d0;
+}
+ul.announ-content li:hover {
+    background: #ccc;
+    cursor:  pointer;
+}

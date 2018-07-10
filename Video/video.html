@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/bootstrap.min.css" >
+     <style>
+         body{
+         font-size: 14px !important;
+         }
+     </style>
+     <title>Video</title>
+  </head>
+  <body>
+   
+     <div class="container">
+        <div class="row">
+           <div class="offset-md-3 col-md-6">
+              <br>
+              <h4>Video ( Youtube URL )</h4>
+              <br>
+              <div class="card">
+                 <div class="card-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                       <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MdBr8xh1mrg" allowfullscreen></iframe>
+                    </div>
+                 </div>
+              </div>
+              <br><br>
+              <h4>Video ( Local Video File )</h4>
+              <br>
+              <div class="card">
+                 <div class="card-body">
+                    <video width="100%"  controls>
+                       <source src="img/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+ 
+     <!-- JS -->
+     <script src="js/jquery-3.3.1.min.js" ></script>
+     <script src="js/bootstrap.min.js" ></script>
+  </body>
+</html>

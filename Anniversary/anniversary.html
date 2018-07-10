@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  &lt;head>
+     &lt;meta charset="utf-8">
+     &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     &lt;!-- CSS -->
+     &lt;link rel="stylesheet" href="css/bootstrap.min.css" >
+     &lt;link rel="stylesheet" href="css/slick.css" >
+     &lt;link rel="stylesheet" href="css/slick-theme.css" >
+     &lt;style>
+         body{
+         padding: 0px;
+         margin: 0px;
+         overflow-x:hidden;
+         font-size: 14px !important;
+         }
+         h4{
+         color:#808080;;
+         }
+         /************Horizontal Slider**********/
+         .horizontal-slider .slick-next, .horizontal-slider .slick-next:hover {
+         background: url(img/arrow-right.png) no-repeat !important;
+         width: 30px;
+         height: 30px;
+         }
+         .horizontal-slider .slick-prev, .horizontal-slider .slick-prev:hover{
+         z-index: 999 !important;
+         background: url(img/arrow-left.png) no-repeat !important;
+         width: 30px;
+         height: 30px;
+         }
+         .horizontal-slider .slick-next::before, .horizontal-slider .slick-prev::before {
+         content: "" !important;
+         }
+         /************Horizontal Slider**********/
+         /************Birthday**********/
+         .anniversary  .slick-slide{
+         opacity: 0.4 !important;
+         }
+         .anniversary .slick-slide.slick-current{
+         opacity: 1 !important;
+         background-color: #e97442;
+         padding: 6px 0px;
+         border-top-left-radius: 20px;
+         border-bottom-right-radius: 20px;
+         }
+         .anniversary.slick-vertical .slick-slide{
+         margin-bottom: 20px;
+         }
+         .title-part{
+         background-color: #e97442;
+         color: #fff;
+         padding: 0px 10px;
+         margin-bottom: 20px;
+         line-height: 40px;
+         }
+         .title-part img{
+         margin-right: 10px;
+         float: left;
+         margin-top: 5px;
+         }
+         .anniversary img.user{
+         border-radius: 100%;
+         width:80px;
+         }
+         .anniversary .photo img{margin: 0 auto; display: block;}
+         .anniversary .info{text-align: center}
+         .anniversary p{margin: 0px;}
+         .anniversary .name{font-size: 15px; color: #E45214;}
+         .anniversary .desig{font-size: 13px; color: #b3b5b7;}
+         .anniversary .dob{font-size: 14px;color: #000;}
+         .anniversary .info{  padding: 8px 0px;}
+         .anniversary .slick-slide.slick-current .photo img{border-radius: 0px; width: 155px;border-top-left-radius: 20px;border-bottom-right-radius: 20px;  }
+         .anniversary .slick-slide.slick-current .name,  .anniversary .slick-slide.slick-current .desig, .anniversary .slick-slide.slick-current .dob  {
+         color: #fff;
+         }
+         /************Birthday**********/
+     &lt;/style>
+     &lt;title>Anniversary</title>
+  &lt;/head>
+  &lt;body>
+     &lt;br><br>
+     &lt;div class="conatiner">
+        &lt;div class="row">
+           &lt;div class="offset-md-4 col-md-4">
+              &lt;div class="title-part">
+                 &lt;img src="img/calendar.png" class="img-fluid">
+                 &lt;p>Anniversary</p>
+              &lt;/div>
+              &lt;div class="horizontal-slider anniversary justify-content-center">
+                 &lt;div>
+                    &lt;div class="photo">
+                       &lt;img src="img/user.jpg" class="img-responsive user">
+                    &lt;/div>
+                    &lt;div class="info">
+                       &lt;p class="name">Username</p>
+                       &lt;p class="desig">Software Engineer</p>
+                       &lt;p class="dob">DOJ : 12 June 2018</p>
+                    &lt;/div>
+                 &lt;/div>
+                 &lt;div>
+                    &lt;div class="photo">
+                       &lt;img src="img/user.jpg" class="img-responsive user">
+                    &lt;/div>
+                    &lt;div class="info">
+                       &lt;p class="name">Username</p>
+                       &lt;p class="desig">Software Engineer</p>
+                       &lt;p class="dob">DOJ : 12 June 2018</p>
+                    &lt;/div>
+                 &lt;/div>
+                 &lt;div>
+                    &lt;div class="photo">
+                       &lt;img src="img/user.jpg" class="img-responsive user">
+                    &lt;/div>
+                    &lt;div class="info">
+                       &lt;p class="name">Username</p>
+                       &lt;p class="desig">Software Engineer</p>
+                       &lt;p class="dob">DOJ : 12 June 2018</p>
+                    &lt;/div>
+                 &lt;/div>
+                 &lt;div>
+                    &lt;div class="photo">
+                       &lt;img src="img/user.jpg" class="img-responsive user">
+                    &lt;/div>
+                    &lt;div class="info">
+                       &lt;p class="name">Username</p>
+                       &lt;p class="desig">Software Engineer</p>
+                       &lt;p class="dob">DOJ : 12 June 2018</p>
+                    &lt;/div>
+                 &lt;/div>
+              &lt;/div>
+           &lt;/div>
+        &lt;/div>
+     &lt;/div>
+     &lt;!-- JS -->
+     &lt;script src="js/jquery-3.3.1.min.js" ></script>
+     &lt;script src="js/bootstrap.min.js" ></script>
+     &lt;script src="js/slick.min.js" ></script>
+     &lt;script type="text/javascript">
+         $('.anniversary').slick({
+         centerMode: true,
+         centerPadding: '60px',
+         slidesToShow: 3,
+         autoplay: true,
+          autoplaySpeed: 2000,
+             
+         responsive: [
+         {
+         breakpoint: 768,
+         settings: {
+         arrows: false,
+         centerMode: true,
+         centerPadding: '40px',
+         slidesToShow: 3
+         }
+         },
+         {
+         breakpoint: 480,
+         settings: {
+         arrows: false,
+         centerMode: true,
+         centerPadding: '40px',
+         slidesToShow: 1
+         }
+         }
+         ]
+         });
+          
+          
+     &lt;/script>
+  &lt;/body>
+</html>
