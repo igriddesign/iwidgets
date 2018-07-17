@@ -1,0 +1,106 @@
+body {
+  font-family: 'Varela Round', sans-serif;
+}
+
+.widget-panel h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.lft {
+  background-color: #ADDCD2;
+}
+
+.rit {
+  background-color: #F594A8;
+}
+
+.pills {
+  background-color: #F5F5F5;
+  padding: 0px;
+}
+.pills .nav-pills {
+  max-height: 600px;
+  overflow-y: auto;
+}
+.pills .nav-pills li {
+  border-bottom: 1px solid #ddd;
+}
+.pills .nav-pills li a {
+  border-radius: 0px;
+}
+.pills .nav-pills li.active {
+  background-color: #E35116;
+}
+.pills .nav-pills li.active a {
+  background-color: #E35116;
+  color: #fff;
+}
+.pills .nav-pills li:hover a {
+  background-color: #E35116;
+  color: #fff;
+}
+.pills .nav-pills li a {
+  color: #000;
+  font-weight: normal;
+}
+.pills .nav-pills li a:focus {
+  background-color: #E35116;
+  color: #fff;
+}
+
+.content {
+  border: 1px solid #ddd;
+  min-height: 600px;
+  max-height: 600px;
+  color: #cac6c6;
+  background-color: #fff;
+  overflow-y: auto;
+}
+.content .tab-pane {
+  padding: 30px 0px;
+}
+
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #656565;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: transparent;
+  border: 0px solid #ccc;
+  border-radius: 4px;
+}
+
+blockquote {
+  border-left: 0px;
+  padding-left: 0px;
+}
+
+.no-padding {
+  padding: 0px;
+}
+
+/***********16/07********/
+.content .tab-pane{padding: 0px;}
+
+.content{padding: 0px;}
+.tab-pane{position: relative;}
+.tab-pane #pills-tab{
+    background-color: #c2c2c2;
+}
+.fixed-pill{top:0}
+
+.fixed-pill{background-color: #C1C1C1}
+.fixed-pill li.active a{ background-color: #F0642B !important; color:#fff}
+.fixed-pill li a{background-color: #696E72; color: #fff; border-radius: 0;border: 0px;}
+
+.fixed-pill li:hover a, .fixed-pill li:focus a, .fixed-pill a:hover, .fixed-pill a:focus  { background-color: #F0642B; color
+:#fff}
+#wrapper{margin-top: 20px; padding: 0px 15px}
+
+
+
