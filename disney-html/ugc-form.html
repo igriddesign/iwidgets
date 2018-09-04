@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="css/bootstrap.min.css" >
+      <link rel="stylesheet" href="css/disney-style.css" >
+     <link rel="stylesheet" href="css/core.css" >
+      <link rel="stylesheet" href="css/bootstrap-datepicker.min.css" >
+    <link rel="icon" href="favicon.png" sizes="32x32" type="image/png"> 
+      <title>UGC Submission Form</title>
+   </head>
+   <body>
+      <header>
+         <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+               <a class="navbar-brand " href="#">  <img src="images/logo.png" class="img-fluid" alt="Disney"></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Dashboard</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Admin</a>
+                     </li>
+                  </ul>
+                  <div class="form-inline my-2 my-lg-0">
+                     <div class="form-group">
+                        <div class="form-group search">
+                           <input type="text" class="form-control"  placeholder="Search"/>
+                           <span class="search-icon"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <section class="ugc-form">
+         <div class="container">
+            <div class="card">
+               
+               <h3 class="form-title"><span>UGC Submission Form</span></h3>
+                  
+               <div class="card-body">
+                  <div class="row">
+                     <div class="col tab-view">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                           <li class="nav-item">
+                              <a class="nav-link active pass" id="pills-basic-tab" data-toggle="pill" href="#pills-basic" role="tab" aria-controls="pills-basic" aria-selected="true">
+                                 Basic Details<span class="num">1</span>
+                                 <span class="active-icon">
+                                    <div class="img"></div>
+                                 </span>
+                              </a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link " id="pills-terms-tab" data-toggle="pill" href="#pills-terms" role="tab" aria-controls="pills-terms" aria-selected="true">
+                                 Terms of Use Acceptance<span class="num">2</span>
+                                 <span class="active-icon">
+                                    <div class="img"></div>
+                                 </span>
+                              </a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link " id="pills-target-tab" data-toggle="pill" href="#pills-target" role="tab" aria-controls="pills-target" aria-selected="true">
+                                 Target Audience<span class="num">3</span>
+                                 <span class="active-icon">
+                                    <div class="img"></div>
+                                 </span>
+                              </a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link " id="pills-moderation-tab" data-toggle="pill" href="#pills-moderation" role="tab" aria-controls="pills-moderation" aria-selected="true">
+                                 Moderation<span class="num">4</span>
+                                 <span class="active-icon">
+                                    <div class="img"></div>
+                                 </span>
+                              </a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link " id="pills-initiative-tab" data-toggle="pill" href="#pills-initiative" role="tab" aria-controls="pills-initiative" aria-selected="true">
+                                 Initiative Characteristics<span class="num">5</span>
+                                 <span class="active-icon">
+                                    <div class="img"></div>
+                                 </span>
+                              </a>
+                           </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            
+                            <!--BASIC DETAILS START-->
+                            
+                           <div class="tab-pane fade show active" id="pills-basic" role="tabpanel" aria-labelledby="pills-basic-tab">
+                              <div class="main-form">
+                                 <div class="form-group row">
+                                    <label  class="col-sm-3 col-form-label">
+                                       <span>1.</span>	Initiative Launch Date 
+                                       <req>*</req>
+                                    </label>
+                                    <div class="col-sm-5">
+                                       <div class=" dt-div" >
+                                          <div class="input-group date" data-provide="datepicker">
+                                             <input type="text" class="form-control" placeholder="dd/mm/yyyy">
+                                             <div class="input-group-addon">
+                                                <span class="dt" ></span>
+                                             </div>
+                                             
+                                          </div>
+                                       </div>
+                                         <div class="invalid-feedback">
+                                Validation text sample
+                                                </div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                       <button type="button" class="btn info-icon" data-container="body" data-toggle="popover" data-placement="right" data-content="Please allow at least 3 weeks prior to launch for Committee to review and suggest revisions to your proposed initiative.  Sponsoring Lawyers are strongly advised to review this Form with clients at the earliest point of initiative conception and to work directly with Committee members on any items requiring enhanced lead-time."></button>
+                                    </div>
+                                 </div>
+                                 <div class="form-group row">
+                                    <label  class="col-sm-3 col-form-label">
+                                       <span>2.</span>	Sponsoring Lawyer 
+                                       <req>*</req>
+                                    </label>
+                                    <div class="col-sm-5">
+                                       <input type="text" class="form-control" placeholder="Include Business Unit reference">
+                                         <div class="invalid-feedback">
+                                Validation text sample
+                                                </div>
+                                    </div>
+                                 </div>
+                                 <div class="form-group row">
+                                    <label  class="col-sm-3 col-form-label">
+                                    <span>3.</span>Initiative Summary  
+                                    </label>
+                                    <div class="col-sm-9">
+                                      
+                                      <img src="images/text-editor.jpg" class="img-fluid">
+                                    </div>
+                                 </div>
+                                 <div class="form-group row">
+                                    <label  class="col-sm-3 col-form-label">
+                                       <span>4.</span>URL, App or Social Platform   
+                                       <req>*</req>
+                                    </label>
+                                    <div class="col-sm-5">
+                                       <input type="text" class="form-control" placeholder="Add URL">
+                                    </div>
+                                    <div class="col-sm-2">
+                                       <button type="button" class="btn info-icon" data-container="body" data-toggle="popover" data-placement="right" data-content="content here.."></button>
+                                    </div>
+                                 </div>
+                                 <div class="form-group row">
+                                    <label  class="col-sm-3 col-form-label">
+                                    </label>
+                                    <div class="col-sm-5">
+                                       <div id="myRadioGroup">
+                                          <div class="choose">
+                                             <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="show-att" name="option-show" class="custom-control-input filetype" value="att" checked>
+                                                <label class="custom-control-label" for="show-att">Attachments</label>
+                                             </div>
+                                             <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="show-exp" name="option-show" class="custom-control-input filetype" value="exp">
+                                                <label class="custom-control-label" for="show-exp">Explanation</label>
+                                             </div>
+                                          </div>
+                                    
+                                           
+                                           
+                                           
+  <div class="form-group br-file att hide" >
+  <div class="file-choose inc-block">
+  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+    </div>
+     <div class="file-choose btn-custom" >
+<button class="btn add-btn"></button>
+</div>
+ </div>
+                                           
+                                           
+                                           
+                                           
+                                          <div class="form-group br-file exp hide"  >
+                                             <textarea class="form-control" rows="3"></textarea>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="form-group row">
+                                    <label  class="col-sm-3 col-form-label">
+                                    <span>5.</span>Pre-Existing Initiative  
+                                    </label>
+                                    <div class="col-sm-9">
+                                       <div class="choose disney-custom-radio">
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                             <input type="radio" id="yes" name="option" class="custom-control-input yn" value="yes" >
+                                             <label class="custom-control-label" for="yes">Yes</label>
+                                          </div>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                             <input type="radio" id="no" name="option" class="custom-control-input yn" value="no">
+                                             <label class="custom-control-label" for="no">No</label>
+                                          </div>
+                                       </div>
+                                       <div class="form-inline yesno">
+                                          <p><b>If yes,</b> name of previous initiative and approximate prior submission year</p>
+                                          <input type="tex" class="form-control txt-box" placeholder="Type here..."  readonly>
+                                          <select class="form-control year"  readonly>
+                                             <option>2017</option>
+                                             <option>2018</option>
+                                             <option>2019</option>
+                                          </select>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="action">
+                                    <button class="btn btn-default save"><span class="sv-icon"></span>Save My Details</button>
+                                    <button class="btn btn-default next btnNext">Next<span class="next-icon"></span></button>
+                                 </div>
+                              </div>
+                           </div>
+                            
+                            <!--BASIC DETAILS END-->
+                            
+                            
+                              <!--TERMS OF USE START-->
+                            
+                           <div class="tab-pane fade show " id="pills-terms" role="tabpanel" aria-labelledby="pills-terms-tab">
+                            
+                              <div class="main-form">
+                            
+                                   <div class="form-group row">
+                                    <label  class="col-sm-3 col-form-label">
+                                       <span class="sr">1.</span><lb>Does the initiative require acceptance of the TWDC Global TOUs? </lb>
+                                       
+                                    </label>
+                                    <div class="col-sm-6">
+                                      <div class="terms-choose">
+                                          <div class="row disney-custom-radio">
+                                     <div class="custom-control custom-radio custom-control-inline col-12 col-md-5">
+  <input type="radio" class="custom-control-input" id="website" name="terms-option">
+  <label class="custom-control-label" for="website">Yes, with a Website</label>
+</div>   
+                                        <div class="custom-control custom-radio custom-control-inline col-12 col-md-5">
+  <input type="radio" class="custom-control-input" id="social" name="terms-option">
+  <label class="custom-control-label" for="social">Yes, with a Social media</label>
+</div>   
+                                        </div>
+                                        </div>
+                                       
+                                        
+                                        
+                                        
+                                    </div>
+                                    <div class="col-sm-2">
+                                       <button type="button" class="btn info-icon" data-container="body" data-toggle="popover" data-placement="right" data-content="Content here..."></button>
+                                    </div>
+                                 </div>
+                                  
+                                   <div class="form-group row mechanism">
+                                       <label  class="col-sm-3 col-form-label"></label>
+                                       <div class="col-sm-7">
+                                        <p class="font-italic">If you have not checked either of the above boxes, please explain the mechanism </p>
+                                        <textarea class="form-control" rows="4"></textarea>
+                                        
+                                        </div>
+                                  </div>
+                              <div class="action">
+                                  <button class="btn btn-default prev btnPrevious" >Previous<span class="pre-icon"></span></button>
+                                    <button class="btn btn-default save"><span class="sv-icon"></span>Save My Details</button>
+                                    <button class="btn btn-default next btnNext">Next<span class="next-icon"></span></button>
+                                 </div>
+                            
+                            
+                               </div>
+                               </div>
+                            
+                            
+                            
+                            
+                          
+                            
+                              <!--TERMS OF USE END-->
+                            
+                            
+                            
+                              <!--TARGET AUDIENCE START-->
+                           <div class="tab-pane fade show " id="pills-target" role="tabpanel" aria-labelledby="pills-target-tab">
+                            <div class="main-form">
+                                
+                                
+                                 <div class="form-group row">
+                                    <label  class="col-sm-3 col-form-label">
+                                       <span class="sr">1.</span><lb>Target Audience </lb>
+                                       
+                                    </label>
+                                    <div class="col-sm-8 terms-choose">
+                                      <div class=" row disney-custom-radio" >
+         
+                                     <div class="custom-control custom-radio custom-control-inline col-12 col-sm-5">
+  <input type="radio" class="custom-control-input" id="ch1" name="target-option">
+  <label class="custom-control-label" for="ch1">Kids under 13 year old</label>
+</div>   
+                                        <div class="custom-control custom-radio custom-control-inline  col-12 col-md-5">
+  <input type="radio" class="custom-control-input " id="ch2" name="target-option">
+  <label class="custom-control-label" for="ch2">Teens 13-17</label>
+</div>   
+                                        <div class="custom-control custom-radio custom-control-inline  col-12 col-md-5">
+  <input type="radio" class="custom-control-input" id="ch3" name="target-option">
+  <label class="custom-control-label" for="ch3">Adults 18+</label>
+</div>   
+                                        <div class="custom-control custom-radio custom-control-inline  col-12 col-md-5">
+  <input type="radio" class="custom-control-input" id="ch4" name="target-option">
+  <label class="custom-control-label" for="ch4">Co-viewing (parents with their kids)</label>
+</div>   
+                                           <div class="custom-control custom-radio custom-control-inline  col-12 col-md-5">
+  <input type="radio" class="custom-control-input" id="ch5" name="target-option">
+  <label class="custom-control-label" for="ch5">All ages</label>
+</div>   
+                                        </div>
+                                       <div class="form-group row other-ad">
+                                        <div class="form-inline">
+                                          <p>Other target audience</p>
+                                          <input type="tex" class="form-control " placeholder="Indicate here...">
+                                         </div>
+                                       </div>
+                                        
+                                        
+                                    </div>
+                                   <div class="col-sm-1">
+                                       <button type="button" class="btn info-icon" data-container="body" data-toggle="popover" data-placement="right" data-content="Content here..." data-original-title="" title=""></button>
+                                    </div>
+                                 </div>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                              <div class="action">
+                                  <button class="btn btn-default prev btnPrevious" >Previous<span class="pre-icon"></span></button>
+                                    <button class="btn btn-default save"><span class="sv-icon"></span>Save My Details</button>
+                                    <button class="btn btn-default next btnNext">Next<span class="next-icon"></span></button>
+                                 </div>
+                            
+                            </div>
+                            
+                            </div>
+                             <!--TARGET AUDIENCE END-->
+                            
+                             <!--MODERATION START-->
+                           <div class="tab-pane fade show " id="pills-moderation" role="tabpanel" aria-labelledby="pills-moderation-tab">
+                            <div class="main-form">
+                                <p>UGC content must be moderated either internally at TWDC or by a third-party moderation vendor contracted by TWDC.  Moderators 
+should be trained professionals and use your business unit’s moderation guidelines.</p>
+                                <p>Please indicate the type(s) of moderation used for the initiative by checking the boxes below: </p>
+                                
+                                <div class="tbl-cnt">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                    <thead>
+                                        <tr><th>Type Of Content</th>
+                                            <th>Included</th>
+                                            <th>Automated Filters</th>
+                                            <th>Type Of Human Moderation</th></tr>
+                                        
+                                        </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Text</td>
+                                            <td><select class="form-control"><option>Select</option><option>Yes</option><option>No</option></select></td>
+                                            <td><select class="form-control"><option>None</option><option>Watermaking</option><option>Black list</option><option>White list</option></select></td>
+                                            <td><select class="form-control"><option>None</option><option>Pre</option><option>Post</option><option>User Flag</option></select></td>
+                                        </tr>
+                                         <tr>
+                                            <td>Audio/Music</td>
+                                            <td><select class="form-control"><option>Select</option><option>Yes</option><option>No</option></select></td>
+                                            <td><select class="form-control"><option>None</option><option>Watermaking</option><option>Black list</option><option>White list</option></select></td>
+                                            <td><select class="form-control"><option>None</option><option>Pre</option><option>Post</option><option>User Flag</option></select></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Photos/Images</td>
+                                            <td><select class="form-control"><option>Select</option><option>Yes</option><option>No</option></select></td>
+                                            <td><select class="form-control"><option>None</option><option>Watermaking</option><option>Black list</option><option>White list</option></select></td>
+                                            <td><select class="form-control"><option>None</option><option>Pre</option><option>Post</option><option>User Flag</option></select></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Video</td>
+                                            <td><select class="form-control"><option>Select</option><option>Yes</option><option>No</option></select></td>
+                                            <td><select class="form-control"><option>None</option><option>Watermaking</option><option>Black list</option><option>White list</option></select></td>
+                                            <td><select class="form-control"><option>None</option><option>Pre</option><option>Post</option><option>User Flag</option></select></td>
+                                        </tr>
+                                        
+                                        
+                                        </tbody>
+                                    </table>
+                                    
+                                    </div>
+                                    </div>
+                                
+                                
+                                
+                                <div class="form-group row">
+                                      
+                                       <div class="col-sm-8">
+                                        <p >If needed, please use this space to provide details about the initiative’s moderation.</p>
+                                        <textarea class="form-control" rows="4"></textarea>
+                                        
+                                        </div>
+                                  </div>
+                                
+                                
+                            
+                            
+                                
+                              <div class="action">
+                                  <button class="btn btn-default prev btnPrevious" >Previous<span class="pre-icon"></span></button>
+                                    <button class="btn btn-default save"><span class="sv-icon"></span>Save My Details</button>
+                                    <button class="btn btn-default next btnNext">Next<span class="next-icon"></span></button>
+                                 </div>
+                            
+                            </div>
+                            
+                            </div>
+                            <!--MODERATION END-->
+                            
+                            
+                              <!--INITIATIVE START-->
+                           <div class="tab-pane fade show " id="pills-initiative" role="tabpanel" aria-labelledby="pills-initiative-tab">
+                            
+                            <div class="main-form">
+                                
+                                <div class="accordion init-acc" id="accordionInit">
+  <div class="card">
+    <div class="card-header" id="heading-1">
+      <h5 class="mb-0">
+        <button class="btn btn-link " type="button" data-toggle="collapse" data-target="#cl-1" aria-expanded="true" aria-controls="cl-1">
+         <span class="icon"></span><span>Music</span>
+        </button>
+      </h5>
+    </div>
+
+    <div id="cl-1" class="collapse show" aria-labelledby="heading-1" data-parent="#accordionInit">
+      <div class="card-body">
+       <div class="form-group row qs">
+                                    <label class="col-sm-12 col-form-label">
+                                       <span class="sr">01.</span><lb>
+                                      <p> Users are able to upload or otherwise use music and/or lyrics in the submission. </p>
+       <b>If yes,</b> please respond next to the questions below: 
+                                        
+                                         <div class="choose">
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                             <input type="radio" id="yes-1" name="option-1" class="custom-control-input yn" value="yes">
+                                             <label class="custom-control-label" for="yes-1">Yes</label>
+                                          </div>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                             <input type="radio" id="no-1" name="option-1" class="custom-control-input yn" value="no">
+                                             <label class="custom-control-label" for="no-1">No</label>
+                                          </div>
+                                       </div>
+                                        </lb>
+                                       
+                                    
+          
+                                      </label>
+                                 </div>
+       
+      </div>
+    </div>
+  </div>
+                                    
+                                    
+ <div class="card">
+    <div class="card-header" id="heading-2">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#cl-2" aria-expanded="true" aria-controls="cl-2">
+         <span class="icon"></span><span>Sweepstakes and Contests; Casting and Talent-Sourcing</span>
+        </button>
+      </h5>
+    </div>
+
+    <div id="cl-2" class="collapse " aria-labelledby="heading-2" data-parent="#accordionInit">
+      <div class="card-body">
+       <div class="form-group row qs">
+                                    <label class="col-sm-12 col-form-label">
+                                       <span class="sr">01.</span><lb>
+                                      <p> Users are able to upload or otherwise use music and/or lyrics in the submission. </p>
+       <b>If yes,</b> please respond next to the questions below: 
+                                        
+                                         <div class="choose">
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                             <input type="radio" id="yes-2" name="option-2" class="custom-control-input yn" value="yes">
+                                             <label class="custom-control-label" for="yes-2">Yes</label>
+                                          </div>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                             <input type="radio" id="no-2" name="option-2" class="custom-control-input yn" value="no">
+                                             <label class="custom-control-label" for="no-2">No</label>
+                                          </div>
+                                       </div>
+                                        <div class="form-group row">
+                                      
+                                       <div class="col-sm-12">
+                                        <p>A. Have you submitted a copy of the official rules along with this Summary or separately to Committee?</p>
+                                        <textarea class="form-control" rows="4"></textarea>
+                                        
+                                        </div>
+                                  </div>
+                                        </lb>
+                                       
+                                    
+          
+                                      </label>
+                                 </div>
+          <div class="form-group row qs">
+                                    <label class="col-sm-12 col-form-label">
+                                       <span class="sr">02.</span><lb>
+                                      <p> The content uploaded by users will be used to directly or indirectly promote or endorse a product or service, 
+        or will be used in an advertisement. </p>
+       <b>If yes,</b> please respond next to the questions below: 
+                                        
+                                         <div class="choose">
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                             <input type="radio" id="yes-3" name="option-3" class="custom-control-input yn" value="yes">
+                                             <label class="custom-control-label" for="yes-3">Yes</label>
+                                          </div>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                             <input type="radio" id="no-3" name="option-3" class="custom-control-input yn" value="no">
+                                             <label class="custom-control-label" for="no-3">No</label>
+                                          </div>
+                                       </div>
+                                       
+                                        </lb>
+                                       
+                                    
+          
+                                      </label>
+                                 </div>
+          <div class="form-group row qs">
+                                    <label class="col-sm-12 col-form-label">
+                                       <span class="sr">03.</span><lb>
+                                      <p>The initiative is being used to cast or otherwise source talent.  </p>
+       <b>If yes,</b> please respond next to the questions below: 
+                                        
+                                         <div class="choose">
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                             <input type="radio" id="yes-4" name="option-4" class="custom-control-input yn" value="yes">
+                                             <label class="custom-control-label" for="yes-4">Yes</label>
+                                          </div>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                             <input type="radio" id="no-4" name="option-4" class="custom-control-input yn" value="no">
+                                             <label class="custom-control-label" for="no-4">No</label>
+                                          </div>
+                                       </div>
+                                       
+                                        </lb>
+                                       
+                                    
+          
+                                      </label>
+                                 </div> 
+          <div class="form-group row qs">
+                                    <label class="col-sm-12 col-form-label">
+                                       <span class="sr">04.</span><lb>
+                                      <p>The initiative involves a donation component (to a charity or otherwise)  </p>
+       <b>If yes,</b> please respond next to the questions below: 
+                                        
+                                         <div class="choose">
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                             <input type="radio" id="yes-5" name="option-5" class="custom-control-input yn" value="yes">
+                                             <label class="custom-control-label" for="yes-5">Yes</label>
+                                          </div>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                             <input type="radio" id="no-5" name="option-5" class="custom-control-input yn" value="no">
+                                             <label class="custom-control-label" for="no-5">No</label>
+                                          </div>
+                                       </div>
+                                       
+                                        </lb>
+                                       
+                                    
+          
+                                      </label>
+                                 </div>
+       
+      </div>
+    </div>
+  </div>
+                                    
+                                    <div class="card">
+    <div class="card-header" id="heading-3">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#cl-3" aria-expanded="false" aria-controls="cl-3">
+         <span class="icon"></span><span>Privacy</span>
+        </button>
+      </h5>
+    </div>
+
+    <div id="cl-3" class="collapse" aria-labelledby="heading-3" data-parent="#accordionInit">
+      <div class="card-body">
+       Contents.....
+      </div>
+    </div>
+  </div> 
+                                    <div class="card">
+    <div class="card-header" id="heading-4">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#cl-4" aria-expanded="false" aria-controls="cl-4">
+         <span class="icon"></span><span>Social Media</span>
+        </button>
+      </h5>
+    </div>
+
+    <div id="cl-4" class="collapse" aria-labelledby="heading-4" data-parent="#accordionInit">
+      <div class="card-body">
+       Contents.....
+      </div>
+    </div>
+  </div>
+                                    <div class="card">
+    <div class="card-header" id="heading-5">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#cl-5" aria-expanded="false" aria-controls="cl-5">
+         <span class="icon"></span><span>International</span>
+        </button>
+      </h5>
+    </div>
+
+    <div id="cl-5" class="collapse" aria-labelledby="heading-5" data-parent="#accordionInit">
+      <div class="card-body">
+       Contents.....
+      </div>
+    </div>
+  </div>
+              
+  
+</div>
+                                
+                                
+                     <div class="action">
+                                  <button class="btn btn-default prev btnPrevious">Previous<span class="pre-icon"></span></button>
+                                    <button class="btn btn-default save">Save As Draft</button>
+                         <button class="btn btn-default submit">Submit</button>
+                         
+                         <button class="btn btn-default withdraw">Withdraw</button>
+                         
+                         <button class="btn btn-default cancel">Cancel</button>
+                                  
+                                 </div>           
+                                
+                                
+                            
+                            </div>
+                            
+                            
+                            </div>
+                              <!--INITIATIVE END-->
+                            
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <p>&copy; Disney. All Rights Reserved</p>
+      </footer>
+      <script src="js/jquery-3.2.1.min.js" ></script>
+      <script src="js/popper.min.js" ></script>
+      <script src="js/bootstrap.min.js" ></script>
+      <script src="js/bootstrap-datepicker.min.js" ></script>
+      <script type="text/javascript">
+         $(function () {
+         $('[data-toggle="popover"]').popover()
+         })
+           $('body').on('click', function (e) {
+        
+         if ($(e.target).data('toggle') !== 'popover'
+           && $(e.target).parents('.popover.in').length === 0) { 
+           $('[data-toggle="popover"]').popover('hide');
+         }
+         });
+          $('.btn').on('click', function (e) {
+         $('.btn').not(this).popover('hide');
+         });
+          
+          
+        
+$('.add-btn').click(function() {
+    $('.file-choose:last').before('<div class="file-choose"><input type="file" class="form-control-file" id="exampleFormControlFile1"><button class="btn remove-btn"></button></div>');
+});
+$('.br-file').on('click','.remove-btn',function() {
+ 	$(this).parent().remove();
+});
+         
+      </script>
+      <script type="text/javascript">
+         $(document).ready(function(){
+             $('.filetype').click(function(){
+                
+                 var inputValue = $(this).attr("value");
+                 var targetBox = $("." + inputValue);
+                 $(".hide").not(targetBox).hide();
+                 $(targetBox).show();
+                 
+             });
+             
+             $('.yn').click(function(){
+         
+              var rBtnVal = $(this).val();
+         
+              if(rBtnVal == "yes"){
+                  $(".txt-box").attr("readonly", false);
+                  $(".year").attr("readonly", false); 
+              }
+              else{ 
+                  $(".txt-box").attr("readonly", true);
+                 $(".year").attr("readonly", true);
+              }
+            });
+   
+         });
+          
+         
+                
+      </script>
+       
+   </body>
+</html>
