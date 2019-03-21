@@ -1,0 +1,61 @@
+*
+{
+	margin:0px;
+	padding:0px;
+}
+.outline-header
+{
+	height:158px;
+	background:#000;
+}
+.outline-menu
+{
+	height:65px;
+	background:#033;
+}
+.outline-profile
+{
+	height:666px;
+	background:#009;
+}
+.outline-body
+{
+	height:941px;
+}
+.outline-leftside
+{
+	width:760px;
+	float:left;
+}
+.outline-rightside
+{
+	width:380px;
+	float:right;
+}
+.out-1-left
+{
+	
+}
+.out-1-right
+{
+	
+}
+
+
+
+
+
+
+
+
+
+.outline-footerlink
+{
+	height:143px;
+	background:#03F;
+}
+.outline-footer
+{
+	height:87px;
+	background:#900;
+}
