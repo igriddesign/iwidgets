@@ -67,7 +67,24 @@ label{color:#646464;font-weight: normal !important;}
     position: absolute;
     bottom: 0;
 }
-
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span{
+    height: 30px;
+    width: 4px;
+    margin: 0;
+    border-radius: 0;
+ }
+.promo-video{
+    button{
+        position: absolute;
+    right: 10px;
+    top: 7px;
+    font-size: 30px;
+        z-index: 999;
+    }
+}
 .custom-nav{
     background-color: transparent;
     border:0px;
@@ -77,12 +94,22 @@ label{color:#646464;font-weight: normal !important;}
         
             a{
                 color: #000;
+             
+                    font-family: Opensans-Semibold, sans-serif;
+                
             }
         }
     }
 }
 .txt-slide{
-    margin-top: -20%;
+    margin-top: 25%;
+    .fp-tableCell{
+        height: auto !important;
+    }
+    .carousel-inner{
+        min-height: 210px;
+    }
+  
     .item{
         h2{
             color: #FE7F12;
@@ -91,12 +118,17 @@ label{color:#646464;font-weight: normal !important;}
         }
     }
     .carousel-indicators {
+            left: 30px;
         z-index: 999;
         li{
             background-color: #eee;
             
             &.active{
                 background-color: #FF901E;
+                border: 0px;
+                width: 10px;
+                height: 10px;
+               
             }
             
         }
@@ -108,11 +140,18 @@ label{color:#646464;font-weight: normal !important;}
         color: #fff;
         font-family: OpenSans-ExtraBold, sans-serif !important;
         font-size: 50px;
-        text-align: justify;
+       
     }
     p{
         color: #fff;
         text-align: justify;
+        margin-bottom: 30px;
+    }
+    .view-more{
+        margin-top: 30px;
+        &:hover{
+            opacity: 0.8;
+        }
     }
 }
 .globe{
@@ -233,7 +272,7 @@ width:800px;
     right: 0;
     z-index:1;
     /*background-color:rgba(30,40,68,0.9);*/
-    background-color:rgba(255,121,9,0.8);
+    background-color:rgba(255,121,9,0.6);
 }
 
 .page-e{
@@ -321,7 +360,7 @@ width:800px;
     }
      &.service-4{
          position: absolute;
-    right: 30%;
+    right: 35%;
         top:45%;
     }
 }
@@ -461,6 +500,7 @@ h4{
     background-color: #F9F9F9;
     .clnt-bg{
         background-color: #fff;
+        
     }
 }
 .client-part{
@@ -576,6 +616,7 @@ address{
     
 }
 .btn-ft-1{
+    text-transform: capitalize;
     background-color: #1E2844;
     color: #fff; 
     display: block;
@@ -592,6 +633,7 @@ address{
     
 }
 .btn-ft-2{
+    text-transform: capitalize;
     background-color: #FE4A2D;
     color: #fff; 
     display: block;
@@ -656,6 +698,7 @@ address{
 }
 }
 .video-play{
+    cursor: pointer;
         .play{
             float: left;
             margin: 0px;
@@ -675,21 +718,30 @@ address{
     }
  
     .dsd-part{
+        display: flex;
         margin-top: 3%;
         li{
-            display: inline-block;
-            width: 24%;
+           list-style: none;
+            width: 25%;
             span{
                 width: 100px;
                 height: 100px;
                 background-color: #2a3455;
                 display: block;
-                margin: 0 auto;
+              float: right;
+                position: relative;
             }
             div{
                 color: #bfc4d4;
                 text-align: center;
-                font-size: 11px;
+                font-size: 12px !important;
+                margin: 0;
+  position: absolute;
+  top: 50%;
+                left: 0;
+                right:0;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
             }
         }
         
@@ -730,7 +782,8 @@ address{
 .career-btn{
     border: 1px solid #fff;
     padding: 13px 15px;
-    color: #fff;
+    background-color: #fff;
+    color: #FE7811;
     margin: 0 auto;
     font-size: 15px;
     width: 30%;
@@ -741,7 +794,7 @@ address{
     &:hover{
         background-color: #fff;
         border-color: #fff;
-        color: #FE7811;
+       
     }
 }
 @media (min-width:1280px) and (max-width:1440px){
@@ -795,7 +848,7 @@ address{
     
     
     .title-style-1 {
-        margin-top: 8%;
+        margin-top: 5%;
 h4{
     text-align: right;
     color: #ff800a;
@@ -807,14 +860,14 @@ h4{
     text-align: right;
     color: #394362;
      font-family: OpenSans-ExtraBold, sans-serif !important;
-         font-size: 65px;
+         font-size: 40px;
           margin: 0;
 }
     
 }
 
 .title-style-2 {
-    margin-top: 8%;
+    margin-top: 10%;
 h4{
     text-align: right;
     color: #394362;
@@ -827,7 +880,7 @@ h4{
         color: #ff800a;
     
      font-family: OpenSans-ExtraBold, sans-serif !important;
-         font-size: 65px;
+         font-size: 40px;
           margin: 0;
 }
     
@@ -968,6 +1021,7 @@ h4{
     padding: 12px 0px;
     border-radius: 5px;
     margin-bottom: 8px;
+        text-transform: capitalize;
 }
 }
 
@@ -982,6 +1036,8 @@ h4{
 background-color: rgba(255,255,255, 0.9);
   overflow-y: hidden;
   transition: 0.5s;
+  
+    
 }
 
 .overlay-content {
@@ -995,13 +1051,20 @@ background-color: rgba(255,255,255, 0.9);
     }
 }
 
-.menu-overlay a {
+.menu-overlay 
+{
+    a {
   padding: 8px;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 25px;
   color: #818181;
   display: block;
   transition: 0.3s;
+        &:hover{
+            color: #FE7811;
+        }
+    }
+    
 }
 
 
@@ -1039,8 +1102,37 @@ background-color: rgba(255,255,255, 0.9);
 .d-block{
     display: block;
 }
+.clnt-bg{
+    .fp-tableCell{
+        height: auto !important;
+       
+    }
+    .carousel-inner{
+        min-height: 55px;
+    }
+    .carousel-indicators {
+           bottom: 0;
+        z-index: 999;
+        li{
+            background-color: #eee;
+            
+            &.active{
+                background-color: #A5A5A5;
+                border: 0px;
+                width: 10px;
+                height: 10px;
+               
+            }
+            
+        }
+    }
+}
 .page-up{
     display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
     a{
     background-color: #FE7811;
     width: 30px;
@@ -1055,4 +1147,295 @@ background-color: rgba(255,255,255, 0.9);
         }
         
     }
+}
+
+
+
+.pages{
+    overflow-y: auto !important;
+    .custom-nav{
+        background-color: rgba(255,255,255,0.7);
+        &.scroll-nav{
+            background-color: #fff;
+            box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+        }
+        .navbar-nav{
+            li{
+                
+                &.active{
+                    a{
+                        color: #FE7811;
+                    }
+                }
+            }
+        }
+        
+        
+    }
+    .navbar-brand{
+        padding: 10px 15px !important;
+        img{
+            width:90px;
+        }
+    }
+    .page-bg {
+      height: 250px;   
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover;
+    }
+    .careers-bg{
+         background: url(../images/careers-bg.jpg) no-repeat center top fixed ;
+    }
+     .services-bg{
+         background: url(../images/services-bg.jpg) no-repeat center top fixed ;
+    }
+     .contact-bg{
+         background: url(../images/contact-bg.jpg) no-repeat center top fixed ;
+    }
+    .about-bg{
+       background: url(../images/about-bg.jpg) no-repeat center top fixed ;
+    }
+    .pg-title{
+        text-align: center;
+        font-family: Opensans-Bold, sans-serif;
+    }
+    .tag{
+         text-align: center;
+        font-size: 16px;
+        color: #939090;
+    }
+    h3{
+        font-size: 18px;
+    }
+    
+    
+    
+}
+
+.job-post{
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    .title{
+        color: #1E2844;
+        font-family: Opensans-Semibold, sans-serif;
+        font-size: 15px;
+        span{
+            font-family: Opensans-Bold, sans-serif;
+        }
+    }
+    .jd{
+        font-size: 13px;
+        text-align: justify;
+        ul{
+            padding-left: 12px;
+            margin-top: 15px;
+        }
+    }
+    .apply{
+        background-color: #FE7811;
+        border:1px solid #FE7811;
+        color: #fff;
+        font-size: 12px;
+        
+    }
+}
+.custom-form{
+    background-color: #1E2844;
+    color: #fff;
+    
+    label{
+        color:#aeb5c5;
+        font-size: 11px;
+    }
+    input{
+        &.form-control{
+        border:0px ;
+        border-bottom:1px solid #424a61;
+        border-radius: 0px;
+        box-shadow: none !important;
+        padding-left: 0px;
+            font-size: 13px;
+            background-color: transparent;
+            color: #fff !important;
+        }
+    }
+    .confirm{
+       background-color: #3c559a;
+    border: 1px solid #6f8ad8;
+    color: #fff;
+    font-size: 12px;
+    }
+    .help-block{
+         color:#aeb5c5;
+        font-size: 11px;
+    }
+}
+
+.services-pg{
+    .service-title{
+        font-family: Opensans-Semibold, sans-serif;
+        font-size: 24px !important;
+    }
+    p{
+        text-align: justify;
+        color: #525252;
+    }
+    .collaboration{
+        position: relative;
+        .bg{
+        height: 180px;
+        background: url(../images/collaboration.jpg) no-repeat center top;
+         -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover;
+        }
+    }
+    .cntmgmt{
+position: relative;
+         width: 50%;
+        .bg{
+        
+        height: 180px;
+        background: url(../images/cntmgmt.jpg) no-repeat center top;
+         -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover;
+        }
+    }
+    .cloudcomputing{
+        position: relative;
+        width: 50%;
+        .bg{
+        
+        height: 180px;
+        background: url(../images/cloud.jpg) no-repeat center top;
+         -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover;
+        }
+    }
+}
+.dflex{
+    display: flex;
+}
+.link-txt{
+  position: absolute;
+    background-color: rgba(30, 40, 68, 0.8);
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 10px;
+    width: 50%;
+    left: 0;
+    text-align: left;
+     -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.sub-service{
+    display: block;
+    &:hover{
+        .link-txt{
+            left: 25%;
+          
+            
+        
+            text-align: center;
+        }
+    }
+    
+}
+.mob-bg{
+    padding: 30px 0px;
+     
+        background: url(../images/mob-bg.jpg) no-repeat center top fixed;
+         -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover;
+    color: #fff;
+    p{
+        color: #afb5c7 !important;
+    }
+}
+.ser-ds{
+    padding-left: 15px;
+    li{
+      font-size: 16px;
+        
+    }
+}
+.pd-30{
+     padding: 30px 0px;
+     
+}
+.cnt-address{
+    padding: 40px 15px !important;
+    .menu-title{
+        color: #1E2844;
+        font-family: Opensans-Semibold, sans-serif;
+        font-size: 20px;
+    }
+    a{
+        color: #2c2c2c;
+        font-size: 13x;
+    }
+    address{
+        margin-top: 10px;
+        span{
+                font-size: 16px;
+        }
+    }
+}
+.about-video{
+    width:50%;
+    margin: 0 auto;
+    display: block;
+}
+.about{
+    .sub-sec{
+        .pg-title, .tag{
+            
+       
+        text-align: left;
+             }
+        
+    }
+   
+    p{
+        font-size: 13px;
+        text-align: justify;
+    }
+}
+.pg-content{
+    p{
+             text-align: justify;
+    color: #525252;   
+    }
+}
+.culture{
+    
+    padding: 30px 0px;
+     
+        background: url(../images/culture-bg.jpg) no-repeat center top fixed;
+         -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover;
+    color: #fff;
+    p{
+        color:#fff3ed;
+    }
+    .tag{
+         color:#fff3ed;
+    }
+}
+.essence{
+    background-color: #eee;
 }

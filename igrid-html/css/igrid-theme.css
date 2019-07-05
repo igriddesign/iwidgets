@@ -77,16 +77,41 @@ label {
   bottom: 0;
 }
 
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+  height: 30px;
+  width: 4px;
+  margin: 0;
+  border-radius: 0;
+}
+
+.promo-video button {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  font-size: 30px;
+  z-index: 999;
+}
+
 .custom-nav {
   background-color: transparent;
   border: 0px;
 }
 .custom-nav .navbar-nav li a {
   color: #000;
+  font-family: Opensans-Semibold, sans-serif;
 }
 
 .txt-slide {
-  margin-top: -20%;
+  margin-top: 25%;
+}
+.txt-slide .fp-tableCell {
+  height: auto !important;
+}
+.txt-slide .carousel-inner {
+  min-height: 210px;
 }
 .txt-slide .item h2 {
   color: #FE7F12;
@@ -94,6 +119,7 @@ label {
   font-size: 45px;
 }
 .txt-slide .carousel-indicators {
+  left: 30px;
   z-index: 999;
 }
 .txt-slide .carousel-indicators li {
@@ -101,6 +127,9 @@ label {
 }
 .txt-slide .carousel-indicators li.active {
   background-color: #FF901E;
+  border: 0px;
+  width: 10px;
+  height: 10px;
 }
 
 .page-b {
@@ -110,11 +139,17 @@ label {
   color: #fff;
   font-family: OpenSans-ExtraBold, sans-serif !important;
   font-size: 50px;
-  text-align: justify;
 }
 .page-b p {
   color: #fff;
   text-align: justify;
+  margin-bottom: 30px;
+}
+.page-b .view-more {
+  margin-top: 30px;
+}
+.page-b .view-more:hover {
+  opacity: 0.8;
 }
 
 .globe {
@@ -239,7 +274,7 @@ label {
   right: 0;
   z-index: 1;
   /*background-color:rgba(30,40,68,0.9);*/
-  background-color: rgba(255, 121, 9, 0.8);
+  background-color: rgba(255, 121, 9, 0.6);
 }
 
 .page-e .vid-content {
@@ -310,7 +345,7 @@ label {
 }
 .service-box.service-4 {
   position: absolute;
-  right: 30%;
+  right: 35%;
   top: 45%;
 }
 
@@ -561,6 +596,7 @@ address span {
 }
 
 .btn-ft-1 {
+  text-transform: capitalize;
   background-color: #1E2844;
   color: #fff;
   display: block;
@@ -577,6 +613,7 @@ address span {
 }
 
 .btn-ft-2 {
+  text-transform: capitalize;
   background-color: #FE4A2D;
   color: #fff;
   display: block;
@@ -621,6 +658,9 @@ address span {
   margin: 0px;
 }
 
+.video-play {
+  cursor: pointer;
+}
 .video-play .play {
   float: left;
   margin: 0px;
@@ -637,23 +677,32 @@ address span {
 }
 
 .dsd-part {
+  display: flex;
   margin-top: 3%;
 }
 .dsd-part li {
-  display: inline-block;
-  width: 24%;
+  list-style: none;
+  width: 25%;
 }
 .dsd-part li span {
   width: 100px;
   height: 100px;
   background-color: #2a3455;
   display: block;
-  margin: 0 auto;
+  float: right;
+  position: relative;
 }
 .dsd-part li div {
   color: #bfc4d4;
   text-align: center;
-  font-size: 11px;
+  font-size: 12px !important;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .dsd-part.works-icon li span {
   height: auto;
@@ -684,7 +733,8 @@ address span {
 .career-btn {
   border: 1px solid #fff;
   padding: 13px 15px;
-  color: #fff;
+  background-color: #fff;
+  color: #FE7811;
   margin: 0 auto;
   font-size: 15px;
   width: 30%;
@@ -696,7 +746,6 @@ address span {
 .career-btn:hover {
   background-color: #fff;
   border-color: #fff;
-  color: #FE7811;
 }
 
 @media (min-width: 1280px) and (max-width: 1440px) {
@@ -735,7 +784,7 @@ address span {
   }
 
   .title-style-1 {
-    margin-top: 8%;
+    margin-top: 5%;
   }
   .title-style-1 h4 {
     text-align: right;
@@ -748,12 +797,12 @@ address span {
     text-align: right;
     color: #394362;
     font-family: OpenSans-ExtraBold, sans-serif !important;
-    font-size: 65px;
+    font-size: 40px;
     margin: 0;
   }
 
   .title-style-2 {
-    margin-top: 8%;
+    margin-top: 10%;
   }
   .title-style-2 h4 {
     text-align: right;
@@ -766,7 +815,7 @@ address span {
     text-align: right;
     color: #ff800a;
     font-family: OpenSans-ExtraBold, sans-serif !important;
-    font-size: 65px;
+    font-size: 40px;
     margin: 0;
   }
 
@@ -877,6 +926,7 @@ address span {
     padding: 12px 0px;
     border-radius: 5px;
     margin-bottom: 8px;
+    text-transform: capitalize;
   }
 }
 .menu-overlay {
@@ -905,10 +955,13 @@ address span {
 .menu-overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 25px;
   color: #818181;
   display: block;
   transition: 0.3s;
+}
+.menu-overlay a:hover {
+  color: #FE7811;
 }
 
 .menu-overlay .closebtn {
@@ -945,8 +998,32 @@ address span {
   display: block;
 }
 
+.clnt-bg .fp-tableCell {
+  height: auto !important;
+}
+.clnt-bg .carousel-inner {
+  min-height: 55px;
+}
+.clnt-bg .carousel-indicators {
+  bottom: 0;
+  z-index: 999;
+}
+.clnt-bg .carousel-indicators li {
+  background-color: #eee;
+}
+.clnt-bg .carousel-indicators li.active {
+  background-color: #A5A5A5;
+  border: 0px;
+  width: 10px;
+  height: 10px;
+}
+
 .page-up {
   display: block;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
 }
 .page-up a {
   background-color: #FE7811;
@@ -960,4 +1037,265 @@ address span {
 }
 .page-up a:hover {
   opacity: 0.9;
+}
+
+.pages {
+  overflow-y: auto !important;
+}
+.pages .custom-nav {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.pages .custom-nav.scroll-nav {
+  background-color: #fff;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+.pages .custom-nav .navbar-nav li.active a {
+  color: #FE7811;
+}
+.pages .navbar-brand {
+  padding: 10px 15px !important;
+}
+.pages .navbar-brand img {
+  width: 90px;
+}
+.pages .page-bg {
+  height: 250px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.pages .careers-bg {
+  background: url(../images/careers-bg.jpg) no-repeat center top fixed;
+}
+.pages .services-bg {
+  background: url(../images/services-bg.jpg) no-repeat center top fixed;
+}
+.pages .contact-bg {
+  background: url(../images/contact-bg.jpg) no-repeat center top fixed;
+}
+.pages .about-bg {
+  background: url(../images/about-bg.jpg) no-repeat center top fixed;
+}
+.pages .pg-title {
+  text-align: center;
+  font-family: Opensans-Bold, sans-serif;
+}
+.pages .tag {
+  text-align: center;
+  font-size: 16px;
+  color: #939090;
+}
+.pages h3 {
+  font-size: 18px;
+}
+
+.job-post {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+.job-post .title {
+  color: #1E2844;
+  font-family: Opensans-Semibold, sans-serif;
+  font-size: 15px;
+}
+.job-post .title span {
+  font-family: Opensans-Bold, sans-serif;
+}
+.job-post .jd {
+  font-size: 13px;
+  text-align: justify;
+}
+.job-post .jd ul {
+  padding-left: 12px;
+  margin-top: 15px;
+}
+.job-post .apply {
+  background-color: #FE7811;
+  border: 1px solid #FE7811;
+  color: #fff;
+  font-size: 12px;
+}
+
+.custom-form {
+  background-color: #1E2844;
+  color: #fff;
+}
+.custom-form label {
+  color: #aeb5c5;
+  font-size: 11px;
+}
+.custom-form input.form-control {
+  border: 0px;
+  border-bottom: 1px solid #424a61;
+  border-radius: 0px;
+  box-shadow: none !important;
+  padding-left: 0px;
+  font-size: 13px;
+  background-color: transparent;
+  color: #fff !important;
+}
+.custom-form .confirm {
+  background-color: #3c559a;
+  border: 1px solid #6f8ad8;
+  color: #fff;
+  font-size: 12px;
+}
+.custom-form .help-block {
+  color: #aeb5c5;
+  font-size: 11px;
+}
+
+.services-pg .service-title {
+  font-family: Opensans-Semibold, sans-serif;
+  font-size: 24px !important;
+}
+.services-pg p {
+  text-align: justify;
+  color: #525252;
+}
+.services-pg .collaboration {
+  position: relative;
+}
+.services-pg .collaboration .bg {
+  height: 180px;
+  background: url(../images/collaboration.jpg) no-repeat center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.services-pg .cntmgmt {
+  position: relative;
+  width: 50%;
+}
+.services-pg .cntmgmt .bg {
+  height: 180px;
+  background: url(../images/cntmgmt.jpg) no-repeat center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.services-pg .cloudcomputing {
+  position: relative;
+  width: 50%;
+}
+.services-pg .cloudcomputing .bg {
+  height: 180px;
+  background: url(../images/cloud.jpg) no-repeat center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.dflex {
+  display: flex;
+}
+
+.link-txt {
+  position: absolute;
+  background-color: rgba(30, 40, 68, 0.8);
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 10px;
+  width: 50%;
+  left: 0;
+  text-align: left;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.sub-service {
+  display: block;
+}
+.sub-service:hover .link-txt {
+  left: 25%;
+  text-align: center;
+}
+
+.mob-bg {
+  padding: 30px 0px;
+  background: url(../images/mob-bg.jpg) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+}
+.mob-bg p {
+  color: #afb5c7 !important;
+}
+
+.ser-ds {
+  padding-left: 15px;
+}
+.ser-ds li {
+  font-size: 16px;
+}
+
+.pd-30 {
+  padding: 30px 0px;
+}
+
+.cnt-address {
+  padding: 40px 15px !important;
+}
+.cnt-address .menu-title {
+  color: #1E2844;
+  font-family: Opensans-Semibold, sans-serif;
+  font-size: 20px;
+}
+.cnt-address a {
+  color: #2c2c2c;
+  font-size: 13x;
+}
+.cnt-address address {
+  margin-top: 10px;
+}
+.cnt-address address span {
+  font-size: 16px;
+}
+
+.about-video {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.about .sub-sec .pg-title, .about .sub-sec .tag {
+  text-align: left;
+}
+.about p {
+  font-size: 13px;
+  text-align: justify;
+}
+
+.pg-content p {
+  text-align: justify;
+  color: #525252;
+}
+
+.culture {
+  padding: 30px 0px;
+  background: url(../images/culture-bg.jpg) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+}
+.culture p {
+  color: #fff3ed;
+}
+.culture .tag {
+  color: #fff3ed;
+}
+
+.essence {
+  background-color: #eee;
 }
