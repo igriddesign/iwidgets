@@ -1558,11 +1558,11 @@ address span {
     font-size: 28px;
   }
 
-  #menu .navbar-right {
+  .landing #menu .navbar-right {
     margin-right: 0px !important;
   }
 
-  #menu li {
+  .landing #menu li {
     display: none;
   }
 
@@ -1639,12 +1639,12 @@ address span {
     font-size: 14px;
   }
 
-  #menu .collapse.navbar-collapse {
+  .landing #menu .collapse.navbar-collapse {
     display: block;
     border: 0px !important;
   }
 
-  .nav.navbar-nav.navbar-right {
+  .landing .nav.navbar-nav.navbar-right {
     position: absolute;
     right: 0;
     top: 0;
