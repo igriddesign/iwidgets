@@ -1,0 +1,29 @@
+body
+{
+background:#fff url("../images/menworking.gif");
+background-repeat:no-repeat;
+background-attachment: fixed;
+background-position: bottom left; 
+}
+
+
+.divcen
+{
+position: absolute;
+	top:25%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	/*background: white;*/
+	margin: auto;
+}
+.f70
+{
+    font-size: 70px;
+	color: red;
+	font-weight: bold;
+}
+.f20
+{
+    font-size: 30px;
+}
